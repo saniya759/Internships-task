@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  color: #7b2cbf;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.card {
+  flex: 1;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 10px 0 0;
+}
+
+.blue {
+  background-color: #2980b9;
+}
+
+.purple {
+  background-color: #8e44ad;
+}
+
+.green {
+  background-color: #27ae60;
+}
+
+.graphs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bar-graph, .donut-chart {
+  width: 48%;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  height: 150px;
+  margin: 20px 0;
+}
+
+.bar-group {
+  text-align: center;
+}
+
+.bar {
+  width: 20px;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.clothing {
+  background-color: #1abc9c;
+}
+
+.food {
+  background-color: #3498db;
+}
+
+.bar-group label {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.legend, .donut-legend {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.key {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+.electronics { background-color: #e74c3c; }
+.kitchen { background-color: #f39c12; }
+.gardening { background-color: #9b59b6; }
+
+.donut {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  background: conic-gradient(
+    #1abc9c 0% 25%,
+    #3498db 25% 45%,
+    #e74c3c 45% 60%,
+    #f39c12 60% 85%,
+    #9b59b6 85% 100%
+  );
+  position: relative;
+}
+
+.donut::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background: white;
+  border-radius: 50%;
+}

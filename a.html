@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Bar Graph</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .graph-container {
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      height: 300px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .bar-group {
+      text-align: center;
+    }
+
+    .bar {
+      width: 40px;
+      background: #00bcd4;
+      border-radius: 5px 5px 0 0;
+      animation: growBar 1s ease-out forwards;
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+
+    .bar-label {
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    /* Different heights with animation delays */
+    .bar1 { height: 100px; animation-delay: 0.2s; }
+    .bar2 { height: 180px; animation-delay: 0.4s; }
+    .bar3 { height: 150px; animation-delay: 0.6s; }
+    .bar4 { height: 220px; animation-delay: 0.8s; }
+    .bar5 { height: 130px; animation-delay: 1s; }
+
+    @keyframes growBar {
+      0% { transform: scaleY(0); }
+      100% { transform: scaleY(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="graph-container">
+    <div class="bar-group">
+      <div class="bar bar1"></div>
+      <div class="bar-label">Mon</div>
+    </div>
+    <div class="bar-group">
+      <div class="bar bar2"></div>
+      <div class="bar-label">Tue</div>
+    </div>
+    <div class="bar-group">
+      <div class="bar bar3"></div>
+      <div class="bar-label">Wed</div>
+    </div>
+    <div class="bar-group">
+      <div class="bar bar4"></div>
+      <div class="bar-label">Thu</div>
+    </div>
+    <div class="bar-group">
+      <div class="bar bar5"></div>
+      <div class="bar-label">Fri</div>
+    </div>
+  </div>
+
+</body>
+</html>
