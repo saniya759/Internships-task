@@ -1,4 +1,0 @@
-# Internships-task
-My learning 
-cbntygftxddzASaSsDfghcg
-verfwcvfyjhyt4trzdfvb jryu6e6ee5srsrgh867\868332frwWEDD
