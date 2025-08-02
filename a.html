@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <title>Animated Bar Graph</title>
   <style>
@@ -80,5 +81,167 @@
     </div>
   </div>
 
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saniya Sharma | Portfolio</title>
+  <link rel="stylesheet" href="a.css"/>
+</head>
+<body>
+  <header>
+    <h1 class="logo">Saniya Tripathi</h1>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="toggle-theme" class="theme-toggle" title="Toggle Theme">
+  🌙
+</button>
+
+  </header>
+
+  <section id="home" class="section hero">
+    <section id="pic">
+      <div class="about-image">
+        <img src="a.jpg" alt="Saniya Tripathi"/>
+      </div>
+    </div>
+  </section>
+    <div class="hero-text">
+      
+      <h2>Hello! I'm <span class="highlight">Saniya</span></h2>
+      <p class="subtitle">Java Developer & Web Enthusiast</p>
+      <a href="#projects" class="btn">My Works</a>
+    </div>
+  </section>
+
+<section id="about" class="section">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>I am a dedicated and enthusiastic final-year B.Tech Computer Science student with a strong foundation in Core & Advanced Java,Spring Framework, Hibernate, and MySQL. I enjoy developing full-stack web applications .I'm passionate about building robust, scalable, and user-friendly applications.</p>
+      <ul class="profile-info">
+        <li><strong>Education:</strong> B.Tech in Computer Science (Final Year)</li>
+        <li><strong>Languages:</strong> English, Hindi</li>
+        <li><strong>Address:</strong> Indore, India</li>
+        <li><strong>Skills:</strong> Java,Springboot, MySQL, HTML, CSS, JavaScript</li>
+        <li><strong>Interests:</strong>Web Development, Software Engineering</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+<section id="skills" class="section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-container">
+
+    <div class="skill">
+      <h4>Java</h4>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 90%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h4>Spring Boot</h4>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 85%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h4>MySQL</h4>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 80%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h4>HTML & CSS</h4>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 90%;"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h4>JavaScript</h4>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width: 70%;"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <section id="resume" class="section resume">
+    <h2 class="section-title">Resume</h2>
+    <p>Download my CV below to know more about my professional journey.</p>
+    <a href="Saniya(resume).pdf" class="btn" download>Download Resume</a>
+  </section>
+
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-container">
+
+    <div class="project-card">
+      <img src="b.jpg" alt="Diet Recommendation Model" />
+      <h3>Diet Recommendation Model</h3>
+      <p>Developed a machine learning model that suggests personalized diet plans based on user health metrics and preferences.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="image.png" alt="Event Management System" />
+      <h3>Event Management System</h3>
+      <p>A web-based application to manage event registration, scheduling, and user roles with real-time admin dashboard controls.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <h4>Address</h4>
+        <p>Indore, India</p>
+      </div>
+      <div class="contact-item">
+        <h4>Email</h4>
+        <p><a href="mailto:saniyatripathi2003@gmail.com">saniyatripathi2003@gmail.com</a></p>
+      </div>
+      <div class="contact-item">
+        <h4>Download Resume</h4>
+        <p><a href="Saniya(resume).pdf" download>Click Here</a></p>
+      </div>
+    </div>
+  </section>
+<script>
+  const toggleBtn = document.getElementById('toggle-theme');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+
+    // Swap icon based on theme
+    if (document.body.classList.contains('light')) {
+      toggleBtn.textContent = '🌞';
+    } else {
+      toggleBtn.textContent = '🌙';
+    }
+  });
+</script>
+
+  <footer>
+    <p>© 2025 Saniya Tripathi. All rights reserved.</p>
+  </footer>
+>>>>>>> 54c7561 (first commited)
 </body>
 </html>
