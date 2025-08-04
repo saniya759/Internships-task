@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guess the Number</title>
+  <style>
+    body {
+      background-color: rgba(0, 255, 255, 0.3);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    .number-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .num-btn {
+      height: 60px;
+      width: 60px;
+      border-radius: 20px;
+      border: 2px solid black;
+      font-size: 20px;
+      background-color: white;
+      cursor: pointer;
+    }
+
+    .num-btn:disabled {
+      background-color: lightgray;
+      cursor: not-allowed;
+    }
+
+    #message, #attemptsLeft {
+      font-size: 18px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Guess a number between 1 and 10</h2>
+  
+  <div class="number-buttons" id="numberGrid"></div>
+  
+  <p id="message"></p>
+  <p id="attemptsLeft"></p>
+
+  <script>
+    const numberToGuess = Math.floor(Math.random() * 10) + 1;
+    let attempts = 0;
+    const maxAttempts = 3;
+
+    const numberGrid = document.getElementById("numberGrid");
+
+    for (let i = 1; i <= 10; i++) {
+      const btn = document.createElement("button");
+      btn.textContent = i;
+      btn.classList.add("num-btn");
+      btn.addEventListener("click", () => handleGuess(i, btn));
+      numberGrid.appendChild(btn);
+    }
+
+    function handleGuess(guess, button) {
+      attempts++;
+      const messageEl = document.getElementById("message");
+      const attemptsLeftEl = document.getElementById("attemptsLeft");
+
+      if (guess === numberToGuess) {
+        messageEl.textContent = `Correct! You guessed in ${attempts} tries.`;
+        disableAllButtons();
+      } else if (attempts === maxAttempts) {
+        messageEl.textContent = `Out of tries! The number was ${numberToGuess}.`;
+        disableAllButtons();
+      } else if (guess < numberToGuess) {
+        messageEl.textContent = "Too low! Try again.";
+      } else {
+        messageEl.textContent = "Too high! Try again.";
+      }
+
+      button.disabled = true;
+      attemptsLeftEl.textContent = `Attempts left: ${maxAttempts - attempts}`;
+    }
+
+    function disableAllButtons() {
+      const allButtons = document.querySelectorAll(".num-btn");
+      allButtons.forEach(btn => btn.disabled = true);
+    }
+  </script>
+</body>
+</html>
