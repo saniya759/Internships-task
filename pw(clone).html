@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Educational Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fa;
+    }
+    .hero {
+      background: #eef1f7;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    .stats-box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .stats-box:hover {
+      transform: scale(1.03);
+    }
+    .category-box {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+    .category-box:hover {
+      background-color: #e3f2fd;
+      transform: scale(1.05);
+    }
+    p.bg-light {
+  border-left: 3px solid #7c3aed;
+}
+
+    footer {
+      background: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container-fluid px-4">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <img src="logo.avif" alt="Logo" width="40" height="40" class="me-2" />
+      EduPlatform
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu Items -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <!-- Left-aligned menu -->
+      <ul class="navbar-nav ms-3">
+        <!-- Dropdown -->
+      <!-- Dropdown with solid border -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle border border-dark px-3 py-1 rounded" href="#" role="button" data-bs-toggle="dropdown">
+    All Courses
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">NEET</a></li>
+    <li><a class="dropdown-item" href="#">IIT JEE</a></li>
+    <li><a class="dropdown-item" href="#">UPSC</a></li>
+  </ul>
+</li>
+
+
+        <!-- Inline links -->
+        <li class="nav-item"><a class="nav-link" href="#">Vidyapeeth</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Udaan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PW Store (Books)</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Test Series</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Class 6th - 8th</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Power Batch</a></li>
+      </ul>
+
+      <!-- Right-aligned login/register -->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="btn btn-primary" href="#" style="background-color:blueviolet">Login/Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Hero Section -->
+<section class="py-5" style="background: linear-gradient(to right, #e5e4ff, #f1f6ff);">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Text -->
+      <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+        <h1 class="fw-bold">
+          Bharat’s <span style="color:blueviolet">Trusted</span> & 
+          <span style="color:blueviolet">Affordable</span><br> Educational Platform
+        </h1>
+        <p class="mt-3">
+          Unlock your potential by signing up with Physics Wallah – the most affordable learning solution.
+        </p>
+        <a href="#" class="btn btn-primary mt-3 px-4" style="background-color:blueviolet">Get Started</a>
+      </div>
+
+      <!-- Right Image Section -->
+      <div class="col-md-6 text-center position-relative">
+        <!-- Alakh Sir Image -->
+        <img src="alakh.jpg" alt="Alakh Sir" class="img-fluid shadow mb-2" style="max-width: 500px;" />
+
+      
+      
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Info Boxes with Images -->
+<section class="container py-5">
+  <div class="row text-center">
+    <div class="col-md-3 col-6 mb-4">
+      <img src="feature_1.png" alt="Daily Live" class="img-fluid mb-2" style="max-height: 80px;" />
+      <h6 class="fw-bold mb-0">Daily Live</h6>
+      <small class="text-muted">Interactive classes</small>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <img src="feature_2.png" alt="10 Million+" class="img-fluid mb-2" style="max-height: 80px;" />
+      <h6 class="fw-bold mb-0">10 Million+</h6>
+      <small class="text-muted">Tests, sample papers & notes</small>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <img src="feature_3.png" alt="24x7 Doubts" class="img-fluid mb-2" style="max-height: 80px;" />
+      <h6 class="fw-bold mb-0">24 x 7</h6>
+      <small class="text-muted">Doubt solving sessions</small>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <img src="feature_4.png" alt="100+ Centres" class="img-fluid mb-2" style="max-height: 80px;" />
+      <h6 class="fw-bold mb-0">100+</h6>
+      <small class="text-muted">Offline centres</small>
+    </div>
+  </div>
+</section>
+          
+<section class="container py-5">
+  <h2 class="text-center fw-bold mb-1">Exam Categories</h2>
+  <p class="text-center text-muted mb-4">
+    PW is preparing students for 35+ exam categories. Scroll down to find the one you are preparing for.
+  </p>
+  <div class="row g-4">
+
+
+
+
+    <!-- IT JEE -->
+    <div class="col-md-4">
+      <div class="d-flex justify-content-between align-items-start p-4 bg-white shadow-sm rounded-4 h-100">
+        <div>
+          <h5 class="fw-bold mb-2">IT JEE</h5>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark me-2">class 11</span>
+            <span class="badge bg-light text-dark me-2">class 12</span>
+          </div>
+          <a href="#" class="text-decoration-none text-primary fw-medium">Explore Category →</a>
+        </div>
+        <div class="rounded-circle d-flex align-items-center justify-content-center position-relative"
+             style="width: 80px; height: 80px; background-color: #fff5e6; margin-top: -10px;">
+          <img src="https://img.icons8.com/color/48/physics.png" alt="JEE Icon" style="width: 40px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- School Preparation -->
+    <div class="col-md-4">
+      <div class="d-flex justify-content-between align-items-start p-4 bg-white shadow-sm rounded-4 h-100">
+        <div>
+          <h5 class="fw-bold mb-2">School Preparation</h5>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark me-2">class 6</span>
+            <span class="badge bg-light text-dark me-2">class 7</span>
+          </div>
+          <a href="#" class="text-decoration-none text-primary fw-medium">Explore Category →</a>
+        </div>
+        <div class="rounded-circle d-flex align-items-center justify-content-center position-relative"
+             style="width: 80px; height: 80px; background-color: #fffbe6; margin-top: -10px;">
+          <img src="https://img.icons8.com/color/48/school.png" alt="School Icon" style="width: 40px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Dapper -->
+    <div class="col-md-4">
+      <div class="d-flex justify-content-between align-items-start p-4 bg-white shadow-sm rounded-4 h-100">
+        <div>
+          <h5 class="fw-bold mb-2">Dapper</h5>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark me-2">Dapper</span>
+            <span class="badge bg-light text-dark me-2">class 8</span>
+            <span class="badge bg-light text-dark">Non</span>
+          </div>
+          <a href="#" class="text-decoration-none text-primary fw-medium">Explore Category →</a>
+        </div>
+        <div class="rounded-circle d-flex align-items-center justify-content-center position-relative"
+             style="width: 80px; height: 80px; background-color: #f0f7ff; margin-top: -10px;">
+          <img src="https://img.icons8.com/color/48/student-male.png" alt="Dapper Icon" style="width: 40px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- UPSC -->
+    <div class="col-md-4">
+      <div class="d-flex justify-content-between align-items-start p-4 bg-white shadow-sm rounded-4 h-100">
+        <div>
+          <h5 class="fw-bold mb-2">UPSC</h5>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark">Explore Category</span>
+          </div>
+          <a href="#" class="text-decoration-none text-primary fw-medium">Explore Category →</a>
+        </div>
+        <div class="rounded-circle d-flex align-items-center justify-content-center position-relative"
+             style="width: 80px; height: 80px; background-color: #e8faff; margin-top: -10px;">
+          <img src="https://img.icons8.com/color/48/parliament.png" alt="UPSC Icon" style="width: 40px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Govt Job Exams -->
+    <div class="col-md-4">
+      <div class="d-flex justify-content-between align-items-start p-4 bg-white shadow-sm rounded-4 h-100">
+        <div>
+          <h5 class="fw-bold mb-2">Govt Job Exams</h5>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark me-2">SSC</span>
+            <span class="badge bg-light text-dark me-2">Banking</span>
+            <span class="badge bg-light text-dark me-2">Trading</span>
+            <span class="badge bg-light text-dark">Judiciary</span>
+          </div>
+          <a href="#" class="text-decoration-none text-primary fw-medium">Explore Category →</a>
+        </div>
+        <div class="rounded-circle d-flex align-items-center justify-content-center position-relative"
+             style="width: 80px; height: 80px; background-color: #e5f4ff; margin-top: -10px;">
+          <img src="https://img.icons8.com/color/48/office.png" alt="Govt Job Icon" style="width: 40px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Defence -->
+    <div class="col-md-4">
+      <div class="d-flex justify-content-between align-items-start p-4 bg-white shadow-sm rounded-4 h-100">
+        <div>
+          <h5 class="fw-bold mb-2">Defence</h5>
+          <div class="mb-3">
+            <span class="badge bg-light text-dark me-2">NDA</span>
+            <span class="badge bg-light text-dark me-2">CDS</span>
+            <span class="badge bg-light text-dark me-2">AFCAT</span>
+            <span class="badge bg-light text-dark">Agniveer</span>
+          </div>
+          <a href="#" class="text-decoration-none text-primary fw-medium">Explore Category →</a>
+        </div>
+        <div class="rounded-circle d-flex align-items-center justify-content-center position-relative"
+             style="width: 80px; height: 80px; background-color: #f0f7ff; margin-top: -10px;">
+          <img src="https://img.icons8.com/color/48/shield.png" alt="Defence Icon" style="width: 40px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Stats Section -->
+<section class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">A Platform Trusted by Students</h2>
+    <p class="text-muted">Physics Wallah aims to transform not just through words, but provide results with numbers!</p>
+    <div class="divider mx-auto" style="width: 80px; height: 3px; background-color: #3b82f6;"></div>
+  </div>
+
+ <div class="row g-4">
+  <!-- Happy Students -->
+  <div class="col-md-3 col-6">
+    <div class="text-center p-4 rounded-3 shadow-sm h-100" style="background-color: rgba(59, 130, 246, 0.1);">
+      <h3 class="fw-bold text-black mb-3">15 Million+</h3>
+      <p class="mb-0">Happy Students</p>
+    </div>
+  </div>
+
+  <!-- Mock Tests -->
+  <div class="col-md-3 col-6">
+    <div class="text-center p-4 rounded-3 shadow-sm h-100" style="background-color: rgba(34, 197, 94, 0.1);">
+      <h3 class="fw-bold text-black mb-3">24000+</h3>
+      <p class="mb-0">Mock Tests</p>
+    </div>
+  </div>
+
+  <!-- Video Lectures -->
+  <div class="col-md-3 col-6">
+    <div class="text-center p-4 rounded-3 shadow-sm h-100" style="background-color: rgba(250, 204, 21, 0.15);">
+      <h3 class="fw-bold text-black mb-3">14000+</h3>
+      <p class="mb-0">Video Lectures</p>
+    </div>
+  </div>
+
+  <!-- Practice Papers -->
+  <div class="col-md-3 col-6">
+    <div class="text-center p-4 rounded-3 shadow-sm h-100" style="background-color: rgba(239, 68, 68, 0.1);">
+      <h3 class="fw-bold text-black mb-3">80000+</h3>
+      <p class="mb-0">Practice Papers</p>
+    </div>
+  </div>
+</div>
+<div class="text-center mt-5">
+  <button class="btn fw-bold text-white border-0"
+          style="background-color: blueviolet; width: 220px; height: 60px; font-size: 18px; border-radius: 8px;">
+    Get Started
+  </button>
+</div>
+
+</section>
+<!-- Study Resources -->
+<section class="container pb-5">
+  <h2 class="text-center fw-bold mb-1">Study Resources</h2>
+  <p class="text-center text-muted mb-4">A diverse array of learning materials to enhance your educational journey.</p>
+  
+  <div class="row g-4">
+    <!-- Reference Books -->
+    <div class="col-md-4">
+      <div class="d-flex flex-column p-0 bg-white rounded-4 shadow-sm h-100 overflow-hidden">
+        <div class="p-4">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <h5 class="fw-bold mb-2">Reference Books</h5>
+              <p class="text-muted mb-0">Our experts have created thorough study materials that break down complicated concepts.</p>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                 style="width: 60px; height: 60px; background-color: #f0f7ff;">
+              <img src="https://img.icons8.com/color/48/book.png" alt="Books" style="width: 32px;">
+            </div>
+          </div>
+        </div>
+        <div class="study-resource-image" style="background-image: url('https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+        </div>
+      </div>
+    </div>
+
+    <!-- NCERT Solutions -->
+    <div class="col-md-4">
+      <div class="d-flex flex-column p-0 bg-white rounded-4 shadow-sm h-100 overflow-hidden">
+        <div class="p-4">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <h5 class="fw-bold mb-2">NCERT Solutions</h5>
+              <p class="text-muted mb-0">Step-by-step explanations for all NCERT problems with detailed solutions.</p>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                 style="width: 60px; height: 60px; background-color: #fff5e6;">
+              <img src="https://img.icons8.com/color/48/solution.png" alt="Solutions" style="width: 32px;">
+            </div>
+          </div>
+        </div>
+        <div class="study-resource-image" style="background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+        </div>
+      </div>
+    </div>
+
+    <!-- Notes -->
+    <div class="col-md-4">
+      <div class="d-flex flex-column p-0 bg-white rounded-4 shadow-sm h-100 overflow-hidden">
+        <div class="p-4">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <h5 class="fw-bold mb-2">Notes</h5>
+              <p class="text-muted mb-0">Concise material that transforms complex ideas into understandable language.</p>
+            </div>
+            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                 style="width: 60px; height: 60px; background-color: #f9f1ff;">
+              <img src="https://img.icons8.com/color/48/note.png" alt="Notes" style="width: 32px;">
+            </div>
+          </div>
+        </div>
+        <div class="study-resource-image" style="background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.study-resource-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  margin-top: auto;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+</style>
+
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p class="mb-0">© 2025 EduPlatform. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
